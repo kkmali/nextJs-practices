@@ -1,6 +1,7 @@
 import React from "react";
-import {FaRegUser} from "react-icons/fa";
-import {MdOutlinePayment} from "react-icons/md";
+import { FaRegUser } from "react-icons/fa";
+import { MdOutlinePayment } from "react-icons/md";
+import { Medical, Money, Store, Calendar } from "../generic/icon";
 
 const constants = () => {
   const dropDownMenuItems = [
@@ -23,9 +24,31 @@ const constants = () => {
       href: "/",
     },
   ];
-  // const dashbaordCardData = [{}];
+  const dashboardCardData = [
+    {
+      title: "Treatments",
+      icon: Medical,
+      href: "/",
+    },
+    {
+      title: "Coaching",
+      icon: Calendar,
+      href: "/calendar",
+    },
+    {
+      title: "Cashback",
+      icon: Money,
+      href: "/money",
+    },
+    {
+      title: "Store",
+      icon: Store,
+      href: "/store",
+    },
+  ];
   return {
     dropDownMenuItems,
+    dashboardCardData,
   };
 };
 
