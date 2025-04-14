@@ -4,11 +4,14 @@
   --color-primary: #13363d;
   --color-gray-100: #f6f8f5;
   --color-light-gray: #ebedf0;
+  --color-green-200: #edf1eb;
   --color-green-500: #6b8262;
   --color-green-600: #7f9b75;
   --color-red-500: #e10004;
-  --shadow-500: 0px 4px 4px -4px rgba(12, 12, 13, 0.05),
+  --shadow-header: 0px 4px 4px -4px rgba(12, 12, 13, 0.05),
     0px 16px 16px -8px rgba(12, 12, 13, 0.1);
+  --shadow-dropdown: 0px 0px 24px -8px rgba(12, 12, 13, 0.2);
+  --shadow-card: 0px 16px 15.8px 0px rgba(0, 0, 0, 0.1);
 }
 
 @utility container {

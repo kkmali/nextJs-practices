@@ -2,6 +2,7 @@ import {Inter} from "next/font/google";
 import "./globals.css";
 import Header from "./components/core/Header";
 import DashboardCards from "./components/cards/DashboardCards";
+import DashboardHeader from "./components/generic/DashboardHeader";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -18,7 +19,7 @@ export default function RootLayout({children}) {
     <html lang="en">
       <body className={` antialiased`}>
         <Header />
-        <DashboardCards />
+        <DashboardHeader />
         {children}
       </body>
     </html>

@@ -5,7 +5,7 @@ import constants from "../generic/constants";
 export default function Header() {
   const {dropDownMenuItems} = constants();
   return (
-    <header className="bg-white shadow-500 rounded-b-2xl">
+    <header className="bg-white shadow-500 rounded-b-2xl sticky z-10">
       <div className="container">
         <div className="flex justify-between items-center md:py-6 py-4">
           <div>
@@ -31,37 +31,34 @@ export default function Header() {
               </div>
             </div>
             <div>
-              <div>
-                <Menu>
-                  <MenuButton className="rounded-full size-9 md:size-16 border-4 border-white bg-light-gray shadow-500 hover:cursor-pointer ">
-                    <span className="md:text-xl text-xs font-black text-green-500">
-                      VP
-                    </span>
-                  </MenuButton>
-
-                  <MenuItems
-                    transition
-                    anchor="bottom end"
-                    className="flex flex-col gap-2 md:gap-4 origin-top-right rounded-xl p-2 md:p-4 mt-4 text-white transition duration-100 ease-out data-[closed]:scale-95 data-[closed]:opacity-0 shadow-2xl bg-white"
-                  >
-                    {dropDownMenuItems.map((item, index) => {
-                      return (
-                        <MenuItem key={index}>
-                          <Button
-                            label={item.label}
-                            icon={item.icon}
-                            className={item.className}
-                            variant={item.variant}
-                            size={item.size}
-                            role={item.role}
-                            href={item.href}
-                          />
-                        </MenuItem>
-                      );
-                    })}
-                  </MenuItems>
-                </Menu>
-              </div>
+              <Menu>
+                <MenuButton className="rounded-full size-9 md:size-16 border-4 border-white bg-light-gray shadow-500 hover:cursor-pointer ">
+                  <span className="md:text-xl text-xs font-black text-green-500">
+                    VP
+                  </span>
+                </MenuButton>
+                <MenuItems
+                  transition
+                  anchor="bottom end"
+                  className="flex flex-col gap-2 origin-top-right rounded-xl p-2 md:p-4 mt-4 text-white transition duration-100 ease-out data-[closed]:scale-95 data-[closed]:opacity-0 shadow-dropdown bg-white z-11"
+                >
+                  {dropDownMenuItems.map((item, index) => {
+                    return (
+                      <MenuItem key={index}>
+                        <Button
+                          label={item.label}
+                          icon={item.icon}
+                          className={item.className}
+                          variant={item.variant}
+                          size={item.size}
+                          role={item.role}
+                          href={item.href}
+                        />
+                      </MenuItem>
+                    );
+                  })}
+                </MenuItems>
+              </Menu>
             </div>
           </div>
         </div>
