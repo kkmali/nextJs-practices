@@ -5,7 +5,7 @@ import constants from "../generic/constants";
 export default function Header() {
   const {dropDownMenuItems} = constants();
   return (
-    <header className="bg-white shadow-500 rounded-b-2xl sticky z-10">
+    <header className="sticky top-0 bg-white shadow-500 rounded-b-2xl y z-10">
       <div className="container">
         <div className="flex justify-between items-center md:py-6 py-4">
           <div>

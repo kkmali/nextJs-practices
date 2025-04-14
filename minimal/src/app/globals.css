@@ -2,12 +2,19 @@
 
 @theme {
   --color-primary: #13363d;
+  --color-gray-50: #b0b0b0;
   --color-gray-100: #f6f8f5;
+  --color-gray-200: #f8f8f9;
   --color-light-gray: #ebedf0;
+  --color-dark-gray: #515151;
   --color-green-200: #edf1eb;
+  --color-green-400: #495843;
   --color-green-500: #6b8262;
   --color-green-600: #7f9b75;
   --color-red-500: #e10004;
+  --color-brown-100: #5c3600;
+  --color-brown-200: #ad6500;
+  --color-cream: #fff3e1;
   --shadow-header: 0px 4px 4px -4px rgba(12, 12, 13, 0.05),
     0px 16px 16px -8px rgba(12, 12, 13, 0.1);
   --shadow-dropdown: 0px 0px 24px -8px rgba(12, 12, 13, 0.2);
