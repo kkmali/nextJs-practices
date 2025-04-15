@@ -19,7 +19,7 @@ const Button = ({
   ...rest
 }) => {
   const baseStyle =
-    "inline-flex justify-center items-center gap-1 sm:gap-2.5 disabled:bg-purple-500  disabled:cursor-not-allowed  transition-ease";
+    "inline-flex justify-center items-center gap-1 sm:gap-2.5 disabled:bg-purple-500 focus-visible:outline-none  disabled:cursor-not-allowed  transition-ease";
 
   const sizes = {
     lg: "p-4 text-lg",

@@ -61,12 +61,12 @@ const constants = () => {
     {
       title: "Coaching",
       icon: Calendar,
-      href: "/calendar",
+      href: "/coaching",
     },
     {
       title: "Cashback",
       icon: Money,
-      href: "/money",
+      href: "/cashback",
     },
     {
       title: "Store",
