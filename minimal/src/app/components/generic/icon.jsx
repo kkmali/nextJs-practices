@@ -2,7 +2,7 @@ export const Medical = ({className}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`${className} md:size-16 size-10`}
+      className={`${className} md:size-16 size-8`}
       viewBox="0 0 64 64"
       fill="none"
     >
@@ -17,7 +17,7 @@ export const Calendar = ({className}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`${className} md:size-16 size-10`}
+      className={`${className} md:size-16 size-8`}
       viewBox="0 0 64 64"
       fill="none"
     >
@@ -32,7 +32,7 @@ export const Money = ({className}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`${className} md:size-16 size-10`}
+      className={`${className} md:size-16 size-8`}
       viewBox="0 0 64 64"
       fill="none"
     >
@@ -55,7 +55,7 @@ export const Store = ({className}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`${className} md:size-16 size-10`}
+      className={`${className} md:size-16 size-8`}
       viewBox="0 0 64 64"
       fill="none"
     >
@@ -87,8 +87,6 @@ export const Order = ({className}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="32"
-      height="32"
       className={`${className}`}
       viewBox="0 0 32 32"
       fill="none"
@@ -107,8 +105,6 @@ export const Documents = ({className}) => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className={`${className}`}
-      width="32"
-      height="32"
       viewBox="0 0 32 32"
       fill="none"
     >
@@ -129,8 +125,6 @@ export const Payments = ({className}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="32"
-      height="32"
       className={`${className}`}
       viewBox="0 0 32 32"
       fill="none"
@@ -292,6 +286,21 @@ export const Receipt = ({className}) => {
         strokeWidth="2"
         strokeLinecap="round"
         strokeinejoin="round"
+      />
+    </svg>
+  );
+};
+export const Bill = ({className}) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className={`${className}`}
+      viewBox="0 0 25 25"
+      fill="none"
+    >
+      <path
+        d="M20.5 4.5H4.5C3.39 4.5 2.51 5.39 2.51 6.5L2.5 18.5C2.5 19.61 3.39 20.5 4.5 20.5H20.5C21.61 20.5 22.5 19.61 22.5 18.5V6.5C22.5 5.39 21.61 4.5 20.5 4.5ZM20.5 18.5H4.5V12.5H20.5V18.5ZM20.5 8.5H4.5V6.5H20.5V8.5Z"
+        fill="currentcolor"
       />
     </svg>
   );

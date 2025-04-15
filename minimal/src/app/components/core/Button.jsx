@@ -12,14 +12,14 @@ const Button = ({
   loading,
   onClick,
   fullWidth = false,
-  size = "md",
+  size = "sm",
   target = "_self",
   disabled = false,
   type = "button",
   ...rest
 }) => {
   const baseStyle =
-    "inline-flex justify-center items-center gap-2.5 disabled:bg-purple-500  disabled:cursor-not-allowed  transition-ease";
+    "inline-flex justify-center items-center gap-1 sm:gap-2.5 disabled:bg-purple-500  disabled:cursor-not-allowed  transition-ease";
 
   const sizes = {
     lg: "p-4 text-lg",
@@ -28,8 +28,9 @@ const Button = ({
   };
 
   const style = {
-    primary: "bg-orange-200 text-white rounded-full  font-semibold",
-    secondary: "bg-gray-50 text-white rounded-full  font-semibold",
+    primary: "bg-black text-white rounded-full py-3  font-bold",
+    secondary:
+      "bg-green-700 text-green-800 rounded-sm font-semibold md:px-6 px-2 md:py-3 py-1",
     tertiary: "text-black font-medium rounded-md ",
   };
 

@@ -14,7 +14,7 @@ function TreatmentsTab() {
               className="md:p-3 focus:outline-none bg-gray-200 text-gray-50 data-[selected]:bg-white
              data-[selected]:text-green-500 data-[selected]:font-bold  data-[hover]:cursor-pointer  w-full "
             >
-              <div className="sm:px-7 md:py-2 py-3 px-3 flex md:flex-row flex-col gap-4 items-center rounded-2xl whitespace-nowrap">
+              <div className="sm:px-7 md:py-2 py-3 px-3 flex md:flex-row flex-col gap-2 md:gap-4 items-center rounded-2xl text-sm md:text-lg  whitespace-nowrap">
                 {item.icon}
                 {item.title}
               </div>

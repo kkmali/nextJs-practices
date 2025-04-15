@@ -67,15 +67,14 @@ function OredersTab() {
                       rowIndex === 0 ? "rounded-br-2xl" : ""
                     }`}
                   >
-                    {/* {row.action} */}
-                    <Actions />
+                    <Actions action={row.action} />
                   </td>
                 </tr>
               ))}
             </tbody>
           </table>
         </TabPanel>
-        <TabPanel>Content 2</TabPanel>
+        <TabPanel>tab 2 content</TabPanel>
       </TabPanels>
     </TabGroup>
   );

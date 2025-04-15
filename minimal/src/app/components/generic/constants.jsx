@@ -77,15 +77,15 @@ const constants = () => {
   const Tabtitle = [
     {
       title: "Orders",
-      icon: <Order />,
+      icon: <Order className="md:size-8 size-5" />,
     },
     {
       title: "Documents",
-      icon: <Documents />,
+      icon: <Documents className="md:size-8 size-5" />,
     },
     {
       title: "Billing & Payments",
-      icon: <Payments />,
+      icon: <Payments className="md:size-8 size-5" />,
     },
   ];
   const OrdersTabTitle = [
@@ -116,35 +116,35 @@ const constants = () => {
       type: "Semaglutide",
       details: "0.25 mg",
       status: "Scheduled",
-      action: "payment",
+      action: "schedule",
     },
     {
       date: "12/12/2024",
       type: "Medical Appointment",
       details: "0.25 mg",
       status: "Canceled",
-      action: "payment",
+      action: "",
     },
     {
       date: "12/12/2024",
       type: "Fitness Starter Plan",
       details: "Phone call",
       status: "Completed",
-      action: "payment",
+      action: "",
     },
     {
       date: "12/12/2024",
       type: "Semaglutide",
       details: "Phone call",
       status: "Shipped",
-      action: "payment",
+      action: "",
     },
     {
       date: "12/12/2024",
       type: "Semaglutide",
       details: "Phone call",
       status: "Rescheduled",
-      action: "payment",
+      action: "",
     },
   ];
 

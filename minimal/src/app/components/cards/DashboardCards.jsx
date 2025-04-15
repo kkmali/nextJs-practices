@@ -26,7 +26,7 @@ function DashboardCards() {
                 isActive
                   ? "bg-primary border-primary"
                   : "bg-white border-white hover:border-green-500 hover:bg-green-200"
-              } max-w-100 sm:px-4 p-3 flex items-center sm:gap-4 shadow-card border-2 trasntion duration-700`}
+              } max-w-100 sm:px-4 p-2 flex items-center sm:gap-4 shadow-card border-2 trasntion duration-700`}
             >
               <div
                 className={`size-5 rounded-full border-3  flex justify-center items-center shrink-0 max-sm:self-start max-sm:mt-2.5 ${
@@ -35,7 +35,7 @@ function DashboardCards() {
               >
                 <span className="size-2 rounded-full bg-white"></span>
               </div>
-              <div className="flex sm:flex-row w-full flex-col items-center gap-x-4 gap-y-2 text-white ">
+              <div className="flex sm:flex-row w-full flex-col items-center gap-x-4 gap-y-1 text-white ">
                 <div>
                   {
                     <item.icon
