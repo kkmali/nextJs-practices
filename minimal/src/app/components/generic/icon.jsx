@@ -148,6 +148,7 @@ export const Timer = ({className}) => {
       xmlns="http://www.w3.org/2000/svg"
       width="17"
       height="17"
+      className={`${className}`}
       viewBox="0 0 17 17"
       fill="none"
     >
@@ -162,8 +163,7 @@ export const Shipping = ({className}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="17"
-      height="17"
+      className={`${className}`}
       viewBox="0 0 17 17"
       fill="none"
     >
@@ -192,6 +192,7 @@ export const Check = ({className}) => {
       xmlns="http://www.w3.org/2000/svg"
       width="17"
       height="17"
+      className={`${className}`}
       viewBox="0 0 17 17"
       fill="none"
     >
@@ -208,6 +209,7 @@ export const Calendar2 = ({className}) => {
       xmlns="http://www.w3.org/2000/svg"
       width="17"
       height="17"
+      className={`${className}`}
       viewBox="0 0 17 17"
       fill="none"
     >
@@ -230,6 +232,7 @@ export const Cancle = ({className}) => {
       xmlns="http://www.w3.org/2000/svg"
       width="17"
       height="17"
+      className={`${className}`}
       viewBox="0 0 17 17"
       fill="none"
     >
@@ -247,6 +250,7 @@ export const CalendarCheck = ({className}) => {
       width="17"
       height="17"
       viewBox="0 0 17 17"
+      className={`${className}`}
       fill="none"
     >
       <g clipPath="url(#clip0_7075_34436)">
@@ -269,6 +273,26 @@ export const CalendarCheck = ({className}) => {
           />
         </clipPath>
       </defs>
+    </svg>
+  );
+};
+export const Receipt = ({className}) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="21"
+      className={`${className}`}
+      viewBox="0 0 16 21"
+      fill="none"
+    >
+      <path
+        d="M5 5.53711H11M5 9.53711H11M9 13.5371H11M1 19.5371V3.53711C1 3.00668 1.21071 2.49797 1.58579 2.1229C1.96086 1.74782 2.46957 1.53711 3 1.53711H13C13.5304 1.53711 14.0391 1.74782 14.4142 2.1229C14.7893 2.49797 15 3.00668 15 3.53711V19.5371L12 17.5371L10 19.5371L8 17.5371L6 19.5371L4 17.5371L1 19.5371Z"
+        stroke="black"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeinejoin="round"
+      />
     </svg>
   );
 };

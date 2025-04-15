@@ -3,7 +3,7 @@ import TreatmentsTab from "./components/generic/TreatmentsTab";
 
 export default function TreatmentsPage() {
   return (
-    <section className="mt-9">
+    <section className="mt-9 pb-20">
       <IntakeForm />
       <TreatmentsTab />
     </section>

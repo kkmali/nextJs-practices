@@ -1,16 +1,16 @@
-import {Menu, MenuButton, MenuItem, MenuItems} from "@headlessui/react";
-import Button from "./Button";
+import Link from "next/link";
+import Dropdown from "./Dropdown";
 import constants from "../generic/constants";
 
 export default function Header() {
-  const {dropDownMenuItems} = constants();
+  const {HeaderdropDownMenuItems} = constants();
   return (
     <header className="sticky top-0 bg-white shadow-500 rounded-b-2xl y z-10">
       <div className="container">
         <div className="flex justify-between items-center md:py-6 py-4">
-          <div>
+          <Link href="/">
             <img src="./logo.png" alt="minimal-logo" className="md:h-16 h-9" />
-          </div>
+          </Link>
           <div className="flex items-center gap-x-6 md:gap-x-10">
             <div className="relative md:size-12 size-7 rounded-full bg-green-600 flex justify-center items-center">
               <svg
@@ -31,34 +31,11 @@ export default function Header() {
               </div>
             </div>
             <div>
-              <Menu>
-                <MenuButton className="rounded-full size-9 md:size-16 border-4 border-white bg-light-gray shadow-500 hover:cursor-pointer ">
-                  <span className="md:text-xl text-xs font-black text-green-500">
-                    VP
-                  </span>
-                </MenuButton>
-                <MenuItems
-                  transition
-                  anchor="bottom end"
-                  className="flex flex-col gap-2 origin-top-right rounded-xl p-2 md:p-4 mt-4 text-white transition duration-100 ease-out data-[closed]:scale-95 data-[closed]:opacity-0 shadow-dropdown bg-white z-11"
-                >
-                  {dropDownMenuItems.map((item, index) => {
-                    return (
-                      <MenuItem key={index}>
-                        <Button
-                          label={item.label}
-                          icon={item.icon}
-                          className={item.className}
-                          variant={item.variant}
-                          size={item.size}
-                          role={item.role}
-                          href={item.href}
-                        />
-                      </MenuItem>
-                    );
-                  })}
-                </MenuItems>
-              </Menu>
+              <Dropdown
+                className="rounded-full size-9 md:size-16 border-4 border-white bg-light-gray shadow-header hover:cursor-pointer md:text-xl text-xs font-black text-green-500"
+                DropdownTitle="VP"
+                DropdownItems={HeaderdropDownMenuItems}
+              />
             </div>
           </div>
         </div>

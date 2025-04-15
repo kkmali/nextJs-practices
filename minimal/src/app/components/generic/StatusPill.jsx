@@ -4,7 +4,7 @@ import {Calendar2, CalendarCheck, Cancle, Check, Shipping, Timer} from "./icon";
 const StatusPill = ({label}) => {
   // Define the icon map
   const icons = {
-    Shipped: <Shipping />,
+    Shipped: <Shipping className="size-4" />,
     Delivered: <Check />,
     Completed: <Check />,
     Scheduled: <CalendarCheck />,
@@ -53,7 +53,7 @@ const StatusPill = ({label}) => {
 
   return (
     <div
-      className={`flex items-center gap-2 px-3 py-2 rounded-full text-sm font-bold ${bgColor} w-fit text-black mx-auto`}
+      className={`flex items-center gap-2 md:px-3 px-2 md:py-2 py-1 rounded-full md:text-sm text-[10px] font-semibold ${bgColor} w-fit text-black mx-auto`}
     >
       {label}
       {icons[label]}
