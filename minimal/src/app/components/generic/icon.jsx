@@ -1,4 +1,4 @@
-export const Medical = ({className}) => {
+export const Medical = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -13,7 +13,7 @@ export const Medical = ({className}) => {
     </svg>
   );
 };
-export const Calendar = ({className}) => {
+export const Calendar = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@ export const Calendar = ({className}) => {
     </svg>
   );
 };
-export const Money = ({className}) => {
+export const Money = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ export const Money = ({className}) => {
     </svg>
   );
 };
-export const Store = ({className}) => {
+export const Store = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,7 @@ export const Store = ({className}) => {
     </svg>
   );
 };
-export const Form = ({className}) => {
+export const Form = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +83,7 @@ export const Form = ({className}) => {
     </svg>
   );
 };
-export const Order = ({className}) => {
+export const Order = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +100,7 @@ export const Order = ({className}) => {
     </svg>
   );
 };
-export const Documents = ({className}) => {
+export const Documents = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -121,7 +121,7 @@ export const Documents = ({className}) => {
     </svg>
   );
 };
-export const Payments = ({className}) => {
+export const Payments = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +136,7 @@ export const Payments = ({className}) => {
     </svg>
   );
 };
-export const Timer = ({className}) => {
+export const Timer = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -153,7 +153,7 @@ export const Timer = ({className}) => {
     </svg>
   );
 };
-export const Shipping = ({className}) => {
+export const Shipping = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -180,7 +180,7 @@ export const Shipping = ({className}) => {
     </svg>
   );
 };
-export const Check = ({className}) => {
+export const Check = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -197,7 +197,7 @@ export const Check = ({className}) => {
     </svg>
   );
 };
-export const Calendar2 = ({className}) => {
+export const Calendar2 = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -220,7 +220,7 @@ export const Calendar2 = ({className}) => {
     </svg>
   );
 };
-export const Cancle = ({className}) => {
+export const Cancle = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -237,7 +237,7 @@ export const Cancle = ({className}) => {
     </svg>
   );
 };
-export const CalendarCheck = ({className}) => {
+export const CalendarCheck = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -270,7 +270,7 @@ export const CalendarCheck = ({className}) => {
     </svg>
   );
 };
-export const Receipt = ({className}) => {
+export const Receipt = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -290,7 +290,7 @@ export const Receipt = ({className}) => {
     </svg>
   );
 };
-export const Bill = ({className}) => {
+export const Bill = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -302,6 +302,19 @@ export const Bill = ({className}) => {
         d="M20.5 4.5H4.5C3.39 4.5 2.51 5.39 2.51 6.5L2.5 18.5C2.5 19.61 3.39 20.5 4.5 20.5H20.5C21.61 20.5 22.5 19.61 22.5 18.5V6.5C22.5 5.39 21.61 4.5 20.5 4.5ZM20.5 18.5H4.5V12.5H20.5V18.5ZM20.5 8.5H4.5V6.5H20.5V8.5Z"
         fill="currentcolor"
       />
+    </svg>
+  );
+};
+export const Tick = ({ className }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      className={`${className}`}
+      viewBox="0 0 24 24"
+      fill="none">
+      <path fillRule="evenodd" clipRule="evenodd" d="M12 21C13.1819 21 14.3522 20.7672 15.4442 20.3149C16.5361 19.8626 17.5282 19.1997 18.364 18.364C19.1997 17.5282 19.8626 16.5361 20.3149 15.4442C20.7672 14.3522 21 13.1819 21 12C21 10.8181 20.7672 9.64778 20.3149 8.55585C19.8626 7.46392 19.1997 6.47177 18.364 5.63604C17.5282 4.80031 16.5361 4.13738 15.4442 3.68508C14.3522 3.23279 13.1819 3 12 3C9.61305 3 7.32387 3.94821 5.63604 5.63604C3.94821 7.32387 3 9.61305 3 12C3 14.3869 3.94821 16.6761 5.63604 18.364C7.32387 20.0518 9.61305 21 12 21ZM11.768 15.64L16.768 9.64L15.232 8.36L10.932 13.519L8.707 11.293L7.293 12.707L10.293 15.707L11.067 16.481L11.768 15.64Z" fill="#7AC35F" />
     </svg>
   );
 };

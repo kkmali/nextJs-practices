@@ -74,6 +74,20 @@ const constants = () => {
       href: "/store",
     },
   ];
+  const CoachingAsideBarData = [
+    {
+      title: "My fitness plan",
+      href: "/coaching",
+    },
+    {
+      title: "Nutrition",
+      href: "/coaching/nutrition",
+    },
+    {
+      title: "Community",
+      href: "/coaching/community",
+    },
+  ];
   const Tabtitle = [
     {
       title: "Orders",
@@ -147,6 +161,40 @@ const constants = () => {
       action: "",
     },
   ];
+  const ProPlan= [
+    {
+      title:"All Starter Features",
+    },
+    {
+      title:"24/7 Coach Support",
+    },
+    {
+      title:"Regular Coach Check-ins",
+    },
+    {
+      title:"Challenge Enrollment",
+    },
+    {
+      title:"Full Community Access",
+    },
+  ]
+  const StarterPlan= [
+    {
+      title:"10% OFF - Partners Package",
+    },
+    {
+      title:"Training Program (Monthly)",
+    },
+    {
+      title:"Nutrition Guidance",
+    },
+    {
+      title:"Access to Recipes",
+    },
+    {
+      title:"Basic Community Access",
+    },
+  ]
 
   return {
     HeaderdropDownMenuItems,
@@ -156,6 +204,9 @@ const constants = () => {
     tableHead,
     tableData,
     ActiondropDownMenuItems,
+    CoachingAsideBarData,
+    ProPlan,
+    StarterPlan,
   };
 };
 

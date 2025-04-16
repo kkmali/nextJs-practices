@@ -17,7 +17,11 @@ function DashboardCards() {
     <div className="container">
       <div className=" mt-[-170px]  xl:mt-[-64px] grid grid-cols-2 max-w-[700px] xl:max-w-full xl:grid-cols-4 gap-4 sm:gap-6 mx-auto ">
         {dashboardCardData.map((item, index) => {
-          const isActive = pathname === item.href;
+          const isActive =
+                item.href === "/"
+                  ? pathname === "/"
+                  : pathname.startsWith(item.href);
+                  
           return (
             <Link
               key={index}
@@ -26,7 +30,7 @@ function DashboardCards() {
                 isActive
                   ? "bg-primary border-primary"
                   : "bg-white border-white hover:border-green-500 hover:bg-green-200"
-              } max-w-100 sm:px-4 p-2 flex items-center sm:gap-4 shadow-card border-2 trasntion duration-700`}
+              } max-w-100 sm:px-4 p-2 flex items-center sm:gap-4 shadow-card border-2 transition duration-700`}
             >
               <div
                 className={`size-5 rounded-full border-3  flex justify-center items-center shrink-0 max-sm:self-start max-sm:mt-2.5 ${
