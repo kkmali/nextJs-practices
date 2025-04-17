@@ -282,6 +282,50 @@ const constants = () => {
       imageSrc: "./nutrition.png",
     },
   ];
+  const stores = [
+    {
+      id: 1,
+      name: "Farfetch",
+      logo: "./fartech.png",
+      cashback: "5%",
+      category: "Fashion",
+    },
+    {
+      id: 2,
+      name: "eBay",
+      logo: "./ebay.png",
+      cashback: "9%",
+      category: "Marketplace",
+    },
+    {
+      id: 3,
+      name: "Best Buy",
+      logo: "./best-buy.png",
+      cashback: "6%",
+      category: "Electronics",
+    },
+    {
+      id: 4,
+      name: "H&M",
+      logo: "./h&m.png",
+      cashback: "9%",
+      category: "Fashion",
+    },
+    {
+      id: 5,
+      name: "Amazon",
+      logo: "./fartech.png",
+      cashback: "$5.00",
+      category: "Marketplace",
+    },
+    {
+      id: 6,
+      name: "Walmart",
+      logo: "./walmart.png",
+      cashback: "$8.00",
+      category: "Supermarket",
+    },
+  ];
 
   return {
     HeaderdropDownMenuItems,
@@ -298,6 +342,7 @@ const constants = () => {
     Ingredients,
     InstructionsList,
     StorecardData,
+    stores,
   };
 };
 
