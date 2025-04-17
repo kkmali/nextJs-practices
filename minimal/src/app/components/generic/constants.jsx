@@ -210,6 +210,78 @@ const constants = () => {
     { name: "Olive Oil", quantity: "1 Cup" },
     { name: "Canned Tuna", quantity: "1 Large can" },
   ];
+  const InstructionsList = [
+    {
+      step: "Cook the quinoa",
+      instructions: [
+        "Rinse the quinoa thoroughly under running water.",
+        "In a small pot, combine the quinoa and 1 cup of water with a pinch of salt.",
+        "Bring to a boil over medium-high heat, then reduce to low heat and simmer until the water is absorbed (about 12–15 minutes). Fluff with a fork.",
+      ],
+    },
+    {
+      step: "Sauté the onion",
+      instructions: [
+        "Heat the olive oil in a pan over medium heat.",
+        "Add the chopped onion and sauté for 3–5 minutes until softened and lightly golden.",
+      ],
+    },
+    {
+      step: "Mix in the tuna",
+      instructions: [
+        "Drain the can of tuna (if packed in water) and add it to the pan with the onion.",
+        "Cook for 2–3 minutes, stirring to combine and enhance the flavor.",
+      ],
+    },
+    {
+      step: "Assemble the bowl",
+      instructions: [
+        "Place the quinoa at the base of a bowl.",
+        "Add the tuna and onion mixture on top.",
+        "Drizzle a little extra olive oil and season with pepper to taste.",
+      ],
+    },
+    {
+      step: "Garnish and serve",
+      instructions: [
+        "Optionally, top with fresh parsley, a squeeze of lemon, or avocado slices for added flavor.",
+      ],
+    },
+  ];
+  const StorecardData = [
+    {
+      title: "Dumbbell Full-Body Workout Plan",
+      price: "$9",
+      description:
+        "Transform your fitness routine with this dumbbell-only workout plan! Designed for efficiency, it offers two alternating full-body workout days per week, focusing on compound movements to build strength and muscle. Includes a deload week to ensure recovery and prevent overtraining. Perfect for all fitness levels.",
+      buttonText: "View Product",
+      imageSrc: "./dumbbell.png",
+    },
+    {
+      title: "Dynamic Warm-Up Routine for Beginners",
+      price: "$9",
+      description:
+        "Get ready to move with this dynamic warm-up routine! Tailored for beginners, it features simple yet effective stretches and mobility exercises to improve flexibility, reduce injury risk, and energize your body for the day. A dose of movement that fits easily into any schedule.",
+      buttonText: "View Product",
+      imageSrc: "./warm-up.png",
+    },
+    {
+      title: "Understanding Progressive Overload",
+      price: "$9",
+      description:
+        "Maximize your fitness results with the principle of progressive overload! Learn how to increase strength, muscle growth, and avoid plateaus through simple methods like increasing weight, reps, or improving form. This guide helps you track progress and apply the right techniques for continuous improvement.",
+      buttonText: "View Product",
+      imageSrc: "./progressive.png",
+    },
+    {
+      title: "Working Out & Nutrition: Myth vs Fact",
+      price: "$9",
+      description:
+        "Discover the truth behind common workout and nutrition myths. This guide debunks misconceptions like “More work is always better” and “Muscle confusion,” while highlighting effective strategies like progressive overload, balancing rest days, and hitting daily protein goals. Reach your fitness goals without the confusion.",
+      buttonText: "View Product",
+      imageSrc: "./nutrition.png",
+    },
+  ];
 
   return {
     HeaderdropDownMenuItems,
@@ -224,6 +296,8 @@ const constants = () => {
     StarterPlan,
     RecipeTabTitle,
     Ingredients,
+    InstructionsList,
+    StorecardData,
   };
 };
 

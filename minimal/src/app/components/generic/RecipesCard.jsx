@@ -30,7 +30,7 @@ function RecipesCard({
         >
           {DishName}
         </h4>
-        <div className="flex sm:flex-row flex-col gap-3">
+        <div className="flex   gap-3">
           <div className="flex gap-2 items-center text-dark-gray">
             <Timer className="size-6" /> <span>{time}</span>
           </div>
@@ -41,7 +41,7 @@ function RecipesCard({
         {children ? (
           children
         ) : (
-          <div className="flex sm:flex-row flex-col gap-3">
+          <div className="flex   gap-3">
             <Benefits title="High Protein" />
             <Benefits title="Low Fat" />
           </div>

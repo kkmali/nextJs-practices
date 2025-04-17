@@ -1,6 +1,7 @@
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import constants from "./constants";
 import IngredientsList from "./IngredientsList";
+import InstructionsList from "./InstructionsList";
 
 export default function RecipeTab() {
   const { RecipeTabTitle } = constants();
@@ -27,7 +28,9 @@ export default function RecipeTab() {
           <TabPanel className="space-y-4">
             <IngredientsList />
           </TabPanel>
-          <TabPanel>bff</TabPanel>
+          <TabPanel className="space-y-4">
+            <InstructionsList />
+          </TabPanel>
         </TabPanels>
       </TabGroup>
     </div>
