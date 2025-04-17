@@ -3,11 +3,11 @@ import Dropdown from "./Dropdown";
 import constants from "../generic/constants";
 
 export default function Header() {
-  const {HeaderdropDownMenuItems} = constants();
+  const { HeaderdropDownMenuItems } = constants();
   return (
     <header className="sticky top-0 bg-white shadow-500 rounded-b-2xl y z-10">
       <div className="container">
-        <div className="flex justify-between items-center md:py-6 py-4">
+        <div className="flex justify-between items-center md:py-4 py-3">
           <Link href="/">
             <img src="./logo.png" alt="minimal-logo" className="md:h-16 h-9" />
           </Link>

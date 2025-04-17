@@ -1,6 +1,6 @@
 import React from "react";
-import {FaRegUser} from "react-icons/fa";
-import {MdOutlinePayment} from "react-icons/md";
+import { FaRegUser } from "react-icons/fa";
+import { MdOutlinePayment } from "react-icons/md";
 import {
   Medical,
   Money,
@@ -9,7 +9,7 @@ import {
   Shipping,
   Receipt,
 } from "../generic/icon";
-import {Order, Payments, Documents} from "./icon";
+import { Order, Payments, Documents } from "./icon";
 
 const constants = () => {
   const HeaderdropDownMenuItems = [
@@ -110,12 +110,20 @@ const constants = () => {
       title: "past (0)",
     },
   ];
+  const RecipeTabTitle = [
+    {
+      title: "Ingredients",
+    },
+    {
+      title: "Instructions",
+    },
+  ];
   const tableHead = [
-    {label: "Date"},
-    {label: "Type"},
-    {label: "Details"},
-    {label: "Status"},
-    {label: "Actions"},
+    { label: "Date" },
+    { label: "Type" },
+    { label: "Details" },
+    { label: "Status" },
+    { label: "Actions" },
   ];
   const tableData = [
     {
@@ -161,40 +169,47 @@ const constants = () => {
       action: "",
     },
   ];
-  const ProPlan= [
+  const ProPlan = [
     {
-      title:"All Starter Features",
+      title: "All Starter Features",
     },
     {
-      title:"24/7 Coach Support",
+      title: "24/7 Coach Support",
     },
     {
-      title:"Regular Coach Check-ins",
+      title: "Regular Coach Check-ins",
     },
     {
-      title:"Challenge Enrollment",
+      title: "Challenge Enrollment",
     },
     {
-      title:"Full Community Access",
+      title: "Full Community Access",
     },
-  ]
-  const StarterPlan= [
+  ];
+  const StarterPlan = [
     {
-      title:"10% OFF - Partners Package",
-    },
-    {
-      title:"Training Program (Monthly)",
+      title: "10% OFF - Partners Package",
     },
     {
-      title:"Nutrition Guidance",
+      title: "Training Program (Monthly)",
     },
     {
-      title:"Access to Recipes",
+      title: "Nutrition Guidance",
     },
     {
-      title:"Basic Community Access",
+      title: "Access to Recipes",
     },
-  ]
+    {
+      title: "Basic Community Access",
+    },
+  ];
+  const Ingredients = [
+    { name: "Lettuce", quantity: "1/4" },
+    { name: "Onion", quantity: "1/4" },
+    { name: "Quinoa", quantity: "1 Cup" },
+    { name: "Olive Oil", quantity: "1 Cup" },
+    { name: "Canned Tuna", quantity: "1 Large can" },
+  ];
 
   return {
     HeaderdropDownMenuItems,
@@ -207,6 +222,8 @@ const constants = () => {
     CoachingAsideBarData,
     ProPlan,
     StarterPlan,
+    RecipeTabTitle,
+    Ingredients,
   };
 };
 
