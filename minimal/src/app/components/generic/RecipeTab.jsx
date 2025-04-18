@@ -1,17 +1,13 @@
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
-import constants from "./constants";
-import IngredientsList from "./IngredientsList";
-import InstructionsList from "./InstructionsList";
 
-export default function RecipeTab() {
-  const { RecipeTabTitle } = constants();
+export default function RecipeTab({ TabTitle, ingredients, instructions }) {
   return (
     <div>
       <TabGroup>
         <TabList className="flex  pb-3 border-b-3 border-light-gray mb-7 ">
-          {RecipeTabTitle.map((item) => (
+          {TabTitle.map((tab) => (
             <Tab
-              key={item.title}
+              key={tab.title}
               className="flex-1/2 focus:outline-none data-[selected]:text-green-400 data-[selected]:font-bold data-[hover]:cursor-pointer data-[selected]:relative text-gray-50
                      data-[selected]:before:content-[''] data-[selected]:before:absolute
                      data-[selected]:before:bottom-[-15px]
@@ -20,16 +16,38 @@ export default function RecipeTab() {
                      data-[selected]:before:left-0
                      data-[selected]:before:bg-green-400"
             >
-              {item.title}
+              {tab.title}
             </Tab>
           ))}
         </TabList>
         <TabPanels className="mt-6 ">
           <TabPanel className="space-y-4">
-            <IngredientsList />
+            {ingredients.map((item, index) => (
+              <div
+                key={index}
+                className="p-4 rounded-sm bg-white shadow-dropdown flex justify-between md:text-base text-sm gap-5"
+              >
+                <p>{item.name}</p>
+                <p>{item.quantity}</p>
+              </div>
+            ))}
           </TabPanel>
           <TabPanel className="space-y-4">
-            <InstructionsList />
+            {instructions.map((item, index) => (
+              <div
+                key={index}
+                className="p-4 rounded-sm bg-white shadow-dropdown  md:text-base text-sm"
+              >
+                <h4 className="text-lg font-semibold text-black mb-2.5">
+                  {item.step}
+                </h4>
+                <ul className="list-disc ml-4 text-sm">
+                  {item.instructions.map((instruction, i) => (
+                    <li key={i}>{instruction}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </TabPanel>
         </TabPanels>
       </TabGroup>

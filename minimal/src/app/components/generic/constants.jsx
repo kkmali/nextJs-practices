@@ -110,14 +110,6 @@ const constants = () => {
       title: "past (0)",
     },
   ];
-  const RecipeTabTitle = [
-    {
-      title: "Ingredients",
-    },
-    {
-      title: "Instructions",
-    },
-  ];
   const tableHead = [
     { label: "Date" },
     { label: "Type" },
@@ -203,51 +195,6 @@ const constants = () => {
       title: "Basic Community Access",
     },
   ];
-  const Ingredients = [
-    { name: "Lettuce", quantity: "1/4" },
-    { name: "Onion", quantity: "1/4" },
-    { name: "Quinoa", quantity: "1 Cup" },
-    { name: "Olive Oil", quantity: "1 Cup" },
-    { name: "Canned Tuna", quantity: "1 Large can" },
-  ];
-  const InstructionsList = [
-    {
-      step: "Cook the quinoa",
-      instructions: [
-        "Rinse the quinoa thoroughly under running water.",
-        "In a small pot, combine the quinoa and 1 cup of water with a pinch of salt.",
-        "Bring to a boil over medium-high heat, then reduce to low heat and simmer until the water is absorbed (about 12–15 minutes). Fluff with a fork.",
-      ],
-    },
-    {
-      step: "Sauté the onion",
-      instructions: [
-        "Heat the olive oil in a pan over medium heat.",
-        "Add the chopped onion and sauté for 3–5 minutes until softened and lightly golden.",
-      ],
-    },
-    {
-      step: "Mix in the tuna",
-      instructions: [
-        "Drain the can of tuna (if packed in water) and add it to the pan with the onion.",
-        "Cook for 2–3 minutes, stirring to combine and enhance the flavor.",
-      ],
-    },
-    {
-      step: "Assemble the bowl",
-      instructions: [
-        "Place the quinoa at the base of a bowl.",
-        "Add the tuna and onion mixture on top.",
-        "Drizzle a little extra olive oil and season with pepper to taste.",
-      ],
-    },
-    {
-      step: "Garnish and serve",
-      instructions: [
-        "Optionally, top with fresh parsley, a squeeze of lemon, or avocado slices for added flavor.",
-      ],
-    },
-  ];
   const StorecardData = [
     {
       title: "Dumbbell Full-Body Workout Plan",
@@ -314,7 +261,7 @@ const constants = () => {
     {
       id: 5,
       name: "Amazon",
-      logo: "./fartech.png",
+      logo: "./amazon.png",
       cashback: "$5.00",
       category: "Marketplace",
     },
@@ -324,6 +271,162 @@ const constants = () => {
       logo: "./walmart.png",
       cashback: "$8.00",
       category: "Supermarket",
+    },
+    {
+      id: 7,
+      name: "easystaff",
+      logo: "./easy.png",
+      cashback: "5.6%",
+      category: "Supermarket",
+    },
+    {
+      id: 8,
+      name: "puzzle english",
+      logo: "./puzzle.png",
+      cashback: "$2,400.00",
+      category: "Supermarket",
+    },
+  ];
+  const recipes = [
+    {
+      id: 1,
+      title: "Quinoa Buddha Bowl",
+      image:
+        "https://s3-alpha-sig.figma.com/img/0b05/f054/e7dddb324ef38fcaf0891a6007ef2938?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=IA5KwpTNATDDhb2gaZ68xnQUiEEtgEVY~hOh-fnwuD6R9D3ZjSzzI88RbqpqQG15G36fQVGSmSk00If9mP8~CV2lQn7RoPIdxak2BCAKO4sSswWjLp-9-J4n4pg9HbtVgWibvpURqfFv8ac12R3TW415lp~edc1knYH47NrbtMZqKTWbKXr5LIB6LXuCaO1PeGh2vLe~da4Nb-Gw1fjntPiwXkDsj228Pl5Pn4hRdVybDcopoAtV-kR8kfs32ufAP-aTMTMbqHw7LmsOHME8Osv0hU7~wBzRlf3dVmq0YzVL3E5r4hTsQtEJ~cCs8JZLgeNVcZUIU4uLjH2Kbqybbg__",
+      time: "30 mins",
+      kcal: "400 kcal",
+      Benefits: [
+        {
+          title: "High Protein",
+        },
+        {
+          title: "Low Fat",
+        },
+      ],
+      TabTitle: [
+        {
+          title: "Ingredients",
+        },
+        {
+          title: "Instructions",
+        },
+      ],
+      ingredients: [
+        { name: "Lettuce", quantity: "1/4" },
+        { name: "Onion", quantity: "1/4" },
+        { name: "Quinoa", quantity: "1 Cup" },
+        { name: "Olive Oil", quantity: "1 Cup" },
+        { name: "Canned Tuna", quantity: "1 Large can" },
+      ],
+      Instructions: [
+        {
+          step: "Cook the quinoa",
+          instructions: [
+            "Rinse the quinoa thoroughly under running water.",
+            "In a small pot, combine the quinoa and 1 cup of water with a pinch of salt.",
+            "Bring to a boil over medium-high heat, then reduce to low heat and simmer until the water is absorbed (about 12–15 minutes). Fluff with a fork.",
+          ],
+        },
+        {
+          step: "Sauté the onion",
+          instructions: [
+            "Heat the olive oil in a pan over medium heat.",
+            "Add the chopped onion and sauté for 3–5 minutes until softened and lightly golden.",
+          ],
+        },
+        {
+          step: "Mix in the tuna",
+          instructions: [
+            "Drain the can of tuna (if packed in water) and add it to the pan with the onion.",
+            "Cook for 2–3 minutes, stirring to combine and enhance the flavor.",
+          ],
+        },
+        {
+          step: "Assemble the bowl",
+          instructions: [
+            "Place the quinoa at the base of a bowl.",
+            "Add the tuna and onion mixture on top.",
+            "Drizzle a little extra olive oil and season with pepper to taste.",
+          ],
+        },
+        {
+          step: "Garnish and serve",
+          instructions: [
+            "Optionally, top with fresh parsley, a squeeze of lemon, or avocado slices for added flavor.",
+          ],
+        },
+      ],
+
+      pdfLink: "https://www.bu.edu/geneva/files/2010/08/Easy_recipes.pdf",
+    },
+    {
+      id: 2,
+      title: "Lean Chicken Stir-Fry",
+      image:
+        "https://s3-alpha-sig.figma.com/img/677b/0089/2b8f743ba0887122d37639928853328a?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=lCCZ0PnSwn~5ZIwzF-UmTFMfIUZz1oMmoG2nhuRLyp0R-323npj9z8ad2hTem4cM58KhvMXmyXXs1xas25YMG19~Pj4C3N9T2Ali-A7aKXFJWEVL2aHAx7rGjFmkO04-pnnpS0NC-j3jDNU8356BUskpJiREqHd5YvnKPzHENGiW95lU~2zcwxu47EWavHIEkcLHHHXD42rQI36BqVq9B0GvIxTEK0VCaAFHRbvIWize6~CvEZcfLigcDdgszsWpkJMq9EsVyFWlF7h-FGGs~YcnMYA2OIC5~7BWdSQiXP~JQzq-W~3FExeYqedyi99aeqwTrCkmCmcp20I54VvxMQ__",
+      time: "20 mins",
+      kcal: "400 kcal",
+      Benefits: [
+        {
+          title: "High Protein",
+        },
+        {
+          title: "Low Fat",
+        },
+      ],
+      TabTitle: [
+        {
+          title: "Ingredients",
+        },
+        {
+          title: "Instructions",
+        },
+      ],
+      ingredients: [
+        { name: "Chicken", quantity: "200g" },
+        { name: "Bell Pepper", quantity: "1" },
+        { name: "Broccoli", quantity: "1 cup" },
+        { name: "Olive Oil", quantity: "2 tbsp" },
+      ],
+      Instructions: [
+        {
+          step: "Cook the quinoa",
+          instructions: [
+            "Rinse the quinoa thoroughly under running water.",
+            "In a small pot, combine the quinoa and 1 cup of water with a pinch of salt.",
+            "Bring to a boil over medium-high heat, then reduce to low heat and simmer until the water is absorbed (about 12–15 minutes). Fluff with a fork.",
+          ],
+        },
+        {
+          step: "Sauté the onion",
+          instructions: [
+            "Heat the olive oil in a pan over medium heat.",
+            "Add the chopped onion and sauté for 3–5 minutes until softened and lightly golden.",
+          ],
+        },
+        {
+          step: "Mix in the tuna",
+          instructions: [
+            "Drain the can of tuna (if packed in water) and add it to the pan with the onion.",
+            "Cook for 2–3 minutes, stirring to combine and enhance the flavor.",
+          ],
+        },
+        {
+          step: "Assemble the bowl",
+          instructions: [
+            "Place the quinoa at the base of a bowl.",
+            "Add the tuna and onion mixture on top.",
+            "Drizzle a little extra olive oil and season with pepper to taste.",
+          ],
+        },
+        {
+          step: "Garnish and serve",
+          instructions: [
+            "Optionally, top with fresh parsley, a squeeze of lemon, or avocado slices for added flavor.",
+          ],
+        },
+      ],
+      pdfLink: "https://www.bu.edu/geneva/files/2010/08/Easy_recipes.pdf",
     },
   ];
 
@@ -338,11 +441,9 @@ const constants = () => {
     CoachingAsideBarData,
     ProPlan,
     StarterPlan,
-    RecipeTabTitle,
-    Ingredients,
-    InstructionsList,
     StorecardData,
     stores,
+    recipes,
   };
 };
 
