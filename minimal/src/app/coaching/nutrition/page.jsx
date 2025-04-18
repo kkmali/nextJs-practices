@@ -15,19 +15,19 @@ function NutritionPage() {
           Your Recipe
         </h3>
         <div
-          className={`md:p-6 sm:p-4 p-2 flex gap-2 sm:gap-4 sm:items-center  rounded-2xl "bg-white shadow-dropdown
+          className={`md:p-6 sm:p-4 p-2 flex md:flex-row flex-col  gap-2 sm:gap-4 md:items-center  rounded-lg bg-gray-200 
           `}
         >
-          <div className="lg:h-[127px] lg:w-[166px] size-24 overflow-hidden rounded-lg">
+          <div className="h-[143px] md:w-[198px] w-full overflow-hidden rounded-lg">
             <img
               src={selectedRecipe.image}
               alt=".."
-              className="lg:max-h-[127px] w-full max-h-24 object-cover"
+              className="max-h-[143px] w-full  object-cover"
             />
           </div>
-          <div className="space-y-3">
+          <div className="sm:space-y-3 space-y-2">
             <h4
-              className={` text-lg lg:text-2xl font-bold text-green-600
+              className={` text-lg lg:text-2xl font-bold text-black
               `}
             >
               {selectedRecipe.title}
@@ -58,7 +58,7 @@ function NutritionPage() {
           instructions={selectedRecipe.Instructions}
         />
       </div>
-      <div className="xl:flex-1/2 md:space-y-6 space-y-4 xl:max-w-[608px]">
+      <div className="xl:flex-1/2 md:space-y-6 space-y-4 xl:max-w-[608px] hover:cursor-pointer">
         <h3 className="md:text-2xl text-lg text-green-500 font-bold">
           Personalized Recipes
         </h3>

@@ -1,9 +1,10 @@
-import {Tab, TabGroup, TabList, TabPanel, TabPanels} from "@headlessui/react";
+import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import constants from "./constants";
 import OredersTab from "./OredersTab";
+import Documents from "./Documents";
 
 function TreatmentsTab() {
-  const {Tabtitle} = constants();
+  const { Tabtitle } = constants();
   return (
     <div className="md:container">
       <TabGroup>
@@ -25,7 +26,9 @@ function TreatmentsTab() {
           <TabPanel>
             <OredersTab />
           </TabPanel>
-          <TabPanel>Content 2</TabPanel>
+          <TabPanel>
+            <Documents />
+          </TabPanel>
           <TabPanel>Content 3</TabPanel>
         </TabPanels>
       </TabGroup>

@@ -1,8 +1,8 @@
-import {Dialog, DialogPanel, DialogTitle} from "@headlessui/react";
+import { Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
 import Button from "../core/Button";
-import {Cancle} from "./icon";
+import { Cancle } from "./icon";
 
-function ModalComponent({isOpen, onClose, children}) {
+function ModalComponent({ isOpen, onClose, children }) {
   return (
     <Dialog
       open={isOpen}
@@ -25,7 +25,7 @@ function ModalComponent({isOpen, onClose, children}) {
               <Button
                 role="button"
                 icon={<Cancle className="text-white" />}
-                className="rounded-full size-5 bg-black p-0 m-0"
+                className="rounded-full size-5 bg-black p-0 m-0 hover:cursor-pointer"
                 variant="tertiary"
                 onClick={onClose}
               />

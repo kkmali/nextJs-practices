@@ -1,11 +1,11 @@
 import React from "react";
-import {Tab, TabGroup, TabList, TabPanel, TabPanels} from "@headlessui/react";
+import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import StatusPill from "./StatusPill";
 import constants from "./constants";
 import Actions from "./Actions";
 
 function OredersTab() {
-  const {OrdersTabTitle, tableHead, tableData} = constants();
+  const { OrdersTabTitle, tableHead, tableData } = constants();
 
   return (
     <TabGroup>

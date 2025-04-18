@@ -14,42 +14,38 @@ import { Order, Payments, Documents } from "./icon";
 const constants = () => {
   const HeaderdropDownMenuItems = [
     {
+      role: "link",
       label: "My information",
       icon: <FaRegUser className="md:text-xl text-base" />,
       className: "flex-row-reverse hover:bg-light-gray p-3",
       variant: "tertiary",
       size: "sm",
-      role: "link",
-      href: "/",
     },
     {
+      role: "link",
       label: "Payment Method",
       icon: <MdOutlinePayment className="md:text-xl text-base" />,
       className: "flex-row-reverse hover:bg-light-gray p-3",
       variant: "tertiary",
       size: "sm",
-      role: "link",
-      href: "/",
     },
   ];
   const ActiondropDownMenuItems = [
     {
+      role: "button",
       label: "Track order",
       icon: <Shipping className="size-7" />,
       className: "flex-row-reverse hover:bg-light-gray p-3",
       variant: "tertiary",
       size: "sm",
-      role: "link",
-      href: "/",
     },
     {
+      role: "button",
       label: "View Receipt",
-      icon: <Receipt />,
+      icon: <Receipt className="size-6" />,
       className: "flex-row-reverse hover:bg-light-gray p-3",
       variant: "tertiary",
       size: "sm",
-      role: "link",
-      href: "/",
     },
   ];
   const dashboardCardData = [
@@ -195,6 +191,7 @@ const constants = () => {
       title: "Basic Community Access",
     },
   ];
+
   const StorecardData = [
     {
       title: "Dumbbell Full-Body Workout Plan",
