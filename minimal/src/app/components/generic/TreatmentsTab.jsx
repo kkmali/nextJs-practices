@@ -22,7 +22,7 @@ function TreatmentsTab() {
             </Tab>
           ))}
         </TabList>
-        <TabPanels className="shadow-dropdown bg-white rounded-b-2xl rounded-e-2xl md:p-12 p-4">
+        <TabPanels className="shadow-dropdown bg-white md:rounded-b-2xl md:rounded-e-2xl md:p-12 p-4">
           <TabPanel>
             <OredersTab />
           </TabPanel>

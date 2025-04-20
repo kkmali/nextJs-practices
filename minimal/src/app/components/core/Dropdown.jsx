@@ -22,7 +22,7 @@ function Dropdown({ className, DropdownTitle, DropdownItems }) {
                 variant={item.variant}
                 size={item.size}
                 role={item.role}
-                onClick={item.onClick ?? (() => console.log("clicked"))} // <- use item.onClick if present
+                onClick={item.onClick ?? (() => console.log("clicked"))}
               />
             </MenuItem>
           ) : (

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import {twMerge} from "tailwind-merge";
+import { twMerge } from "tailwind-merge";
 
 const Button = ({
   label,

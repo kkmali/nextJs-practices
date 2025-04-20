@@ -1,7 +1,14 @@
 import React from "react";
-import {Calendar2, CalendarCheck, Cancle, Check, Shipping, Timer} from "./icon";
+import {
+  Calendar2,
+  CalendarCheck,
+  Cancle,
+  Check,
+  Shipping,
+  Timer,
+} from "./icon";
 
-const StatusPill = ({label, className}) => {
+const StatusPill = ({ label, className }) => {
   // Define the icon map
   const icons = {
     Shipped: <Shipping className="size-4" />,
