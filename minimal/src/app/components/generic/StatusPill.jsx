@@ -12,14 +12,14 @@ const StatusPill = ({ label, className }) => {
   // Define the icon map
   const icons = {
     Shipped: <Shipping className="size-4" />,
-    Delivered: <Check />,
-    Completed: <Check />,
-    Scheduled: <CalendarCheck />,
-    Rescheduled: <Calendar2 />,
-    "In progress": <Calendar2 />,
-    Canceled: <Cancle />,
-    Pending: <Timer />,
-    Processing: <Timer />,
+    Delivered: <Check className="size-4" />,
+    Completed: <Check className="size-4" />,
+    Scheduled: <CalendarCheck className="size-4" />,
+    Rescheduled: <Calendar2 className="size-4" />,
+    "In progress": <Calendar2 className="size-4" />,
+    Canceled: <Cancle className="size-4" />,
+    Pending: <Timer className="size-4" />,
+    Processing: <Timer className="size-4" />,
   };
 
   // Initialize bgColor

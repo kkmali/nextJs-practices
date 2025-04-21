@@ -21,7 +21,7 @@ export default function CashbackPage() {
 
   return (
     <div className="container">
-      <div className="flex flex-col sm:flex-row bg-white sm:py-16 py-6  justify-between gap-6 px-5">
+      <div className="flex flex-col sm:flex-row md:py-16 py-6 sm:items-baseline  justify-between gap-6 md:px-5">
         <SearchBar value={search} onChange={setSearch} />
         <CategoryFilter
           selected={category}
@@ -29,7 +29,7 @@ export default function CashbackPage() {
           categories={categories}
         />
       </div>
-      <div className="grid grid-cols-[repeat(auto-fill,_minmax(220px,_1fr))] justify-items-center gap-6">
+      <div className="grid sm:grid-cols-[repeat(auto-fill,_minmax(270px,_1fr))] grid-cols-[repeat(auto-fill,_minmax(135px,_1fr))]   justify-items-center md:gap-6 gap-4">
         {filteredStores.map((store) => (
           <StoreCard key={store.id} store={store} />
         ))}

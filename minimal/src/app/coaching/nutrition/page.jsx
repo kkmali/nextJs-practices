@@ -9,7 +9,7 @@ function NutritionPage() {
   const { recipes } = constants();
   const [selectedRecipe, setSelectedRecipe] = useState(recipes[0]);
   return (
-    <section className="md:p-12 p-4 bg-white shadow-dropdown flex xl:flex-row flex-col w-full justify-between gap-6 rounded-2xl">
+    <section className="lg:p-12 md:p-6 p-4 bg-white shadow-dropdown flex xl:flex-row flex-col w-full justify-between gap-6 rounded-2xl ">
       <div className="xl:flex-1/2 md:space-y-6 space-y-4  xl:max-w-[608px]">
         <h3 className="md:text-2xl text-lg text-green-500 font-bold">
           Your Recipe

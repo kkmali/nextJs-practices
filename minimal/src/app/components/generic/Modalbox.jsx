@@ -127,7 +127,7 @@ function Modalbox({ action }) {
           label="Payment"
           icon={<Bill className="size-6" />}
           fullWidth
-          className="text-base md:text-lg"
+          className="text-base md:text-lg "
         />
       </>
     );

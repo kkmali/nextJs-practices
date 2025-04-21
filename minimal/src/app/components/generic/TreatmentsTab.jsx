@@ -7,7 +7,7 @@ function TreatmentsTab() {
   const { Tabtitle } = constants();
   return (
     <div className="md:container">
-      <TabGroup>
+      <TabGroup className="">
         <TabList className="group flex md:w-fit w-full shadow-dropdown rounded-t-2xl overflow-hidden">
           {Tabtitle.map((item) => (
             <Tab
@@ -22,7 +22,7 @@ function TreatmentsTab() {
             </Tab>
           ))}
         </TabList>
-        <TabPanels className="shadow-dropdown bg-white md:rounded-b-2xl md:rounded-e-2xl md:p-12 p-4">
+        <TabPanels className="shadow-dropdown bg-white md:rounded-b-2xl md:rounded-e-2xl md:p-12 p-4 ">
           <TabPanel>
             <OredersTab />
           </TabPanel>

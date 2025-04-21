@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
 @theme {
+  --container-max-width: 1720px;
+  --font-Inter: var(--font-Inter);
   --color-primary: #13363d;
   --color-gray-50: #b0b0b0;
   --color-gray-100: #f6f8f5;
@@ -23,15 +25,22 @@
     0px 16px 16px -8px rgba(12, 12, 13, 0.1);
   --shadow-dropdown: 0px 0px 24px -8px rgba(12, 12, 13, 0.2);
   --shadow-card: 0px 16px 15.8px 0px rgba(0, 0, 0, 0.1);
+  --gradient-bg-gradient: linear-gradient(
+    114.38deg,
+    #edf2f2 21.78%,
+    #f7f3f2 42.17%,
+    #f7edeb 67.35%,
+    #f8ecf1 99.32%
+  );
 }
 
 @utility container {
-  @apply max-w-[1720px] px-4 mx-auto;
+  @apply px-4 mx-auto;
+  max-width: var(--container-max-width);
 }
 
 body {
-  font-family: Inter, sans-serif;
-  @apply bg-gray-100;
+  @apply font-Inter bg-gray-100;
 }
 
 .plan-card-gradient {

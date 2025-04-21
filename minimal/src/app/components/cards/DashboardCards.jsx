@@ -1,11 +1,11 @@
 "use client";
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import constants from "../generic/constants";
-import {usePathname} from "next/navigation";
+import { usePathname } from "next/navigation";
 
 function DashboardCards() {
-  const {dashboardCardData} = constants();
+  const { dashboardCardData } = constants();
   const pathname = usePathname();
   const [isMounted, setIsMounted] = useState(false);
   useEffect(() => {
@@ -15,13 +15,13 @@ function DashboardCards() {
   if (!isMounted) return null;
   return (
     <div className="container">
-      <div className=" mt-[-170px]  xl:mt-[-64px] grid grid-cols-2 max-w-[700px] xl:max-w-full xl:grid-cols-4 gap-4 sm:gap-6 mx-auto ">
+      <div className=" mt-[-140px]  xl:mt-[-64px] grid grid-cols-2 max-w-[400px] sm:max-w-[700px] xl:max-w-full xl:grid-cols-4 gap-4 sm:gap-6 mx-auto ">
         {dashboardCardData.map((item, index) => {
           const isActive =
-                item.href === "/"
-                  ? pathname === "/"
-                  : pathname.startsWith(item.href);
-                  
+            item.href === "/"
+              ? pathname === "/"
+              : pathname.startsWith(item.href);
+
           return (
             <Link
               key={index}

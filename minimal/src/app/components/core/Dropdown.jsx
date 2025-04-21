@@ -4,7 +4,7 @@ import Button from "./Button";
 function Dropdown({ className, DropdownTitle, DropdownItems }) {
   return (
     <Menu>
-      <MenuButton className={`${className}`}>
+      <MenuButton className={`${className} hover:cursor-pointer`}>
         <span>{DropdownTitle}</span>
       </MenuButton>
       <MenuItems

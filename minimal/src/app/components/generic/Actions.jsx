@@ -75,7 +75,7 @@ function Actions({ action }) {
             label={action === "payment" ? "Payment" : "Schedule"}
             role="button"
             icon={<Bill className="md:size-6 size-4" />}
-            className="flex-row-reverse text-[10px] md:text-base"
+            className="flex-row-reverse text-[10px] md:text-base hover:cursor-pointer"
             variant="secondary"
             onClick={() => open(action)}
           />
